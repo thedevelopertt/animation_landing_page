@@ -1,0 +1,11 @@
+//Start Style for Element body
+@mixin _body{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  @include _body();
+}
+//End Style for Element body
+

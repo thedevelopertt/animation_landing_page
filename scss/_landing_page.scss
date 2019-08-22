@@ -1,0 +1,97 @@
+//Start Style for landing-page
+@mixin _landing-page{
+  min-height: 100vh;
+}
+
+.landing-page{
+  @include _landing-page();
+}
+//End Style for landing-page
+
+//Start Style for landing-page-container
+@mixin _landing-page-container{
+  @extend .container-fluid;
+}
+
+.landing-page-container{
+  @include _landing-page-container();
+}
+//End Style for landing-page-container
+
+//Start Style for landing-page-row
+@mixin _landing-page-row{
+  @extend .row, .h-100;
+}
+
+.landing-page-row{
+  @include _landing-page-row();
+}
+//End Style for landing-page-row
+
+//Start Style for landing-page-row-inner-col
+@mixin _landing-page-row-inner-col{
+  @extend .col-md-12;
+  background-color: $dark;
+  height: 100vh;
+}
+
+.landing-page-row-inner-col{
+  @include _landing-page-row-inner-col();
+}
+//End Style for landing-page-row-inner-col
+
+//Start Style for landing-page-title
+@mixin _landing-page-title{
+  @extend .text-center, .font-weight-bold, .col-md-12;
+  position: relative;
+
+}
+
+.landing-page-title{
+  @include _landing-page-title();
+}
+//End Style for landing-page-title
+
+
+//Start Style for landing-page-action
+@mixin _landing-page-action{
+  @extend .btn, .btn-outline-success, .text-white;
+}
+
+.landing-page-action{
+  @include _landing-page-action();
+}
+//End Style for landing-page-action
+
+//Start Style for landing-page-action-container
+@mixin _landing-page-action-container{
+  @extend .text-center, .col-md-12;
+}
+
+.landing-page-action-container{
+  @include _landing-page-action-container();
+}
+//End Style for landing-page-action-container
+
+//Start Style for landing-page-inner-row
+@mixin _landing-page-inner-row{
+  @extend .row, .align-items-center, .justify-content-md-center, .h-100;
+  position: relative;
+}
+
+.landing-page-inner-row{
+  @include _landing-page-inner-row();
+}
+//End Style for landing-page-inner-row
+
+//Start Style for landing-page-title-header
+@mixin _landing-page-title-header{
+  @extend .text-white, .font-weight-bold, .display-4;
+  position: relative;
+}
+
+.landing-page-title-header{
+  @include _landing-page-title-header();
+}
+//End Style for landing-page-title-header
+
